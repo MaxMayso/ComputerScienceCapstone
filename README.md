@@ -38,7 +38,7 @@ This project is part of a professional portfolio aimed at demonstrating real-wor
 
 ---
 
-## Narrative 
+## Professional Self-Assessment
 
 For the database enhancement, I continued work on my original SNHU140 Python game, Protect and Serve. The focus this time was implementing a way to persist player progress between game sessions using JSON file storage. This added a real-world feature that would be expected in even basic modern applications, saving and loading data. I started with a modular, object-oriented structure from previous enhancements, which made it easier to insert new features cleanly and test them independently. I chose this artifact for enhancement in the databases category because it gave me the opportunity to demonstrate how structured data can be serialized, stored, and retrieved using JSON.a lightweight but widely used data exchange format. Rather than using something like a SQL or NoSQL database, I decided to go with a more self-contained solution that made sense for the size and purpose of the game allowing to be as great as I had imagined it. I wanted this enhancement to feel like a natural extension of the project, not just something added for the sake of checking a box. For me, it's important that each improvement reflects how much I've grown as a developer. This feature not only made the game more useful for players but also gave me a chance to apply what I’ve learned about managing data in a real, hands-on way.
 
