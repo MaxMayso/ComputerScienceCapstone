@@ -48,7 +48,7 @@ This enhancement let me meet the goals I set in my Module One plan. I demonstrat
 
 Looking back, I learned how to manage file I/O cleanly and anticipate errors like missing or corrupted save files. One challenge I faced was figuring out where the save/load logic belonged, balancing convenience for the player without making the game logic feel bloated. I resolved this by isolating save/load logic in the GameState class and using method calls in the game loop that don’t clutter user experience.
 
-This enhancement really brought my artifact full circle. From a single file with hardcoded logic to a modular, scalable, and persistent application—this journey has shown me how far I’ve come since I first started. It also reinforced how databases and data storage principles are relevant even in the smallest of projects.
+This enhancement really brought my artifact full circle. From a single file with hardcoded logic to a modular, scalable, and persistent application, this journey has shown me how far I’ve come since I first started. It also reinforced how databases and data storage principles are relevant even in the smallest of projects.
 
 --- 
 
