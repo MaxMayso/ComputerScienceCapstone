@@ -10,7 +10,7 @@ The primary artifact in this ePortfolio is a Python-based text adventure game ti
 
 ---
 
-## Enhancements Summary
+## Enhancements List
 
 ### 1. Software Design and Engineering
 The game code was refactored into a modular, object-oriented structure. The original single-file script was split into multiple organized modules (`player.py`, `mechanics.py`, `config.py`, `game.py`) to improve readability, scalability, and maintainability.
@@ -37,4 +37,20 @@ A JSON-based save/load system was implemented to allow players to persist game s
 This project is part of a professional portfolio aimed at demonstrating real-world application of computer science fundamentals. It represents my growth as a software developer and reflects my interests in DevSecOps, cloud computing, and secure software architecture. The project meets or exceeds the requirements defined in the CS 499 Capstone Project Guidelines as requested in the rubric, showcasing my preparedness for industry-level software development.
 
 ---
+
+## Narrative 
+
+For the database enhancement, I continued work on my original SNHU140 Python game, Protect and Serve. The focus this time was implementing a way to persist player progress between game sessions using JSON file storage. This added a real-world feature that would be expected in even basic modern applications—saving and loading data. I started with a modular, object-oriented structure from previous enhancements, which made it easier to insert new features cleanly and test them independently. I chose this artifact for enhancement in the databases category because it gave me the opportunity to demonstrate how structured data can be serialized, stored, and retrieved using JSON—a lightweight but widely used data exchange format. Instead of relying on external systems like SQL or NoSQL databases, I opted for a self-contained solution appropriate for the game’s scope. It’s important to me that enhancements feel intentional and display how far I've come, as well as grounded in the artifact’s goals, and this feature adds real utility for players while showing practical knowledge of data handling.
+
+To accomplish this, I added methods to the GameState class to convert the internal state of the game to and from JSON format. This included handling edge cases like missing files and ensuring the save file was named per user. The player’s inventory, current room, and overall game progress are now saved automatically without the player needing to type “save” constantly. At first I added a simple save feature that allowed the player to save after input. This was shortlived after being more comfortable with the save algorithms I then upgraded the game to provide an auto-save feature that records the game's process immediately after the user exits the game through the exit command. On game start, it checks for an existing save and reloads the last session if available.
+
+This enhancement let me meet the goals I set in my Module One plan. I demonstrated how to integrate file handling, data persistence, and user state recovery into a Python-based program. While it wasn’t an enterprise-level database, it was an effective way to show working knowledge of data storage principles in a scoped project. It helped me further internalize how even basic programs benefit from structured data systems.
+
+Looking back, I learned how to manage file I/O cleanly and anticipate errors like missing or corrupted save files. One challenge I faced was figuring out where the save/load logic belonged—balancing convenience for the player without making the game logic feel bloated. I resolved this by isolating save/load logic in the GameState class and using method calls in the game loop that don’t clutter user experience.
+
+This enhancement really brought my artifact full circle. From a single file with hardcoded logic to a modular, scalable, and persistent application—this journey has shown me how far I’ve come since I first started. It also reinforced how databases and data storage principles are relevant even in the smallest of projects.
+
+--- 
+
+
 
